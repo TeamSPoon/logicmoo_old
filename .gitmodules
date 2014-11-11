@@ -1,0 +1,3 @@
+[submodule "PrologMUD"]
+	path = PrologMUD
+	url = https://github.com/TeamSPoon/PrologMUD.git
