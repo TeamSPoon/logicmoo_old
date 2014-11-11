@@ -7,3 +7,6 @@
 [submodule "swish"]
 	path = swish
 	url = https://github.com/TeamSPoon/swish.git
+[submodule "ClioPatria"]
+	path = ClioPatria
+	url = https://github.com/TeamSPoon/ClioPatria.git
