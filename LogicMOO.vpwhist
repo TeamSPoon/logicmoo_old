@@ -1,9 +1,151 @@
+[Global]
+CurrentProject=PrologMUD.vpj
 [ProjectDates]
-IndigologFlux.vpj=20141111055204843
-LogicMOO.vpj=20141111055204843
-LogicMOO_MUD.vpj=20141111055204843
-LogicmooDatabaseServer.vpj=20141111055204843
-logicserver.vpj=20141111055204843
-nl_system.vpj=20141111055204843
-SWI-Prolog.vpj=20141111055204843
-typesystem.vpj=20141111055205051
+PrologMUD.vpj=20141111084409713
+[TreeExpansion2]
+- PrologMUD.vpj
+  + Cliopatria
+    + api
+    + applications
+      + help
+    + client
+      + Java
+    + components
+    + config-available
+    + cpack
+    + entailment
+    + etc
+      + demoCA
+      + server
+    + lib
+      + bundles
+      + cpack
+      + http
+      + semweb
+    + rdf
+      + base
+      + cpack
+      + tool
+    + rdfql
+    + skin
+    + test
+    + user
+    + w3c
+    + web
+      + css
+      + help
+        + cpack
+        + howto
+      + html
+      + icons
+      + js
+        + path
+        + prototype
+      + tutorial
+        + Parsia
+      + yui
+        + 2.7.0
+          + build
+            + assets
+              + skins
+                + sam
+            + autocomplete
+              + assets
+                + skins
+                  + sam
+            + button
+            + container
+              + assets
+                + skins
+                  + sam
+            + datasource
+            + treeview
+              + assets
+                + skins
+                  + sam
+            + utilities
+          + examples
+            + treeview
+              + assets
+                + css
+                  + folders
+                + img
+                  + folders
+    + Windows
+  + PrologMUD
+    + runtime
+      + config-enabled
+      + RDF-store
+    + src_assets
+      + web
+        + css
+        + icons
+        + js
+        + prolog
+        + snd
+    + src_data
+      + pldata
+    + src_incoming
+      + actions
+      + dbase
+        + leancop21
+        + motel
+      + ext
+        + r6rs-plt-redex-model
+      + mobs
+        + affordance
+      + objs
+      + parsing
+        + chat80
+        + CURT
+      + rooms
+      + vworld
+    + src_lib
+      + logicmoo_util
+    + src_webui
+      + assetsources
+      + http
+        + web
+          + css
+          + icons
+          + js
+      + model
+      + mudconsole
+  - src_data
+    + pldata
+  + .\swipl
+    - library
+      - pldoc
+  + swish
+    + examples
+    + filesystems
+    + lib
+      + render
+    + test
+    + web
+      + css
+      + help
+      + icons
+      + js
+        + codemirror
+          + addon
+            + hover
+          + mode
+            + prolog
+          + theme
+        + render
+        + tutorials
+scroll:0
+[State]
+SCREEN: 1920 1080 308 166 1440 699 0 0 M 0 0 0 0 1207 553
+CWD: ..\LogicmooDeveloperFramework
+FILEHIST: 9
+..\logicmoo\src_incoming\vworld\world_2d.pl
+..\logicmoo\src\logicmoo_util\logicmoo_util_bugger.pl
+..\logicmoo\src_incoming\dbase\dbase_i_isa_subclass.pl
+..\logicmoo\src\logicmoo_util\logicmoo_util_library.pl
+..\logicmoo\src_incoming\dbase\dbase_formattypes.pl
+..\logicmoo\src_incoming\vworld\moo.pl
+..\logicmoo\src_incoming\dbase\dbase_i_kb_store.pl
+..\logicmoo\src_data\pldata\el_assertions.pl
+..\logicmoo\src\run_common.pl
