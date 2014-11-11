@@ -1,3 +1,9 @@
 [submodule "PrologMUD"]
 	path = PrologMUD
 	url = https://github.com/TeamSPoon/PrologMUD.git
+[submodule "PrologMUD.wiki"]
+	path = PrologMUD.wiki
+	url = https://github.com/TeamSPoon/PrologMUD.wiki.git
+[submodule "swish"]
+	path = swish
+	url = https://github.com/TeamSPoon/swish.git

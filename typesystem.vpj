@@ -1,0 +1,100 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+	Version="10.0"
+	VendorName="SlickEdit"
+	WorkingDir=".">
+	<Config
+		Name="Release"
+		OutputFile=""
+		CompilerConfigName="Latest Version">
+		<Menu>
+			<Target
+				Name="Compile"
+				MenuCaption="&amp;Compile"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveCurrent"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Rebuild"
+				MenuCaption="&amp;Rebuild"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Debug"
+				MenuCaption="&amp;Debug"
+				SaveOption="SaveNone"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Execute"
+				MenuCaption="E&amp;xecute"
+				SaveOption="SaveNone"
+				RunFromDir="%rw">
+				<Exec CmdLine='"typesystem.exe"'/>
+			</Target>
+		</Menu>
+	</Config>
+	<CustomFolders>
+		<Folder
+			Name="Source Files"
+			Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl">
+		</Folder>
+		<Folder
+			Name="Header Files"
+			Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.inc;*.sh;*.cpy;*.if"/>
+		<Folder
+			Name="Resource Files"
+			Filters="*.ico;*.cur;*.dlg"/>
+		<Folder
+			Name="Bitmaps"
+			Filters="*.bmp"/>
+		<Folder
+			Name="Other Files"
+			Filters="">
+		</Folder>
+	</CustomFolders>
+	<Files AutoFolders="PackageView">
+		<Folder Name="src_incoming/ext">
+			<F
+				N="src_incoming/ext/*.*"
+				Recurse="1"
+				Refilter="0"
+				Excludes=""/>
+		</Folder>
+		<Folder Name="src_incoming/parsing/chat80">
+			<F N="src_incoming/parsing/chat80/aggreg.pl"/>
+			<F N="src_incoming/parsing/chat80/clone.xg"/>
+			<F N="src_incoming/parsing/chat80/clotab.pl"/>
+			<F N="src_incoming/parsing/chat80/demo"/>
+			<F N="src_incoming/parsing/chat80/lex.xg"/>
+			<F N="src_incoming/parsing/chat80/load.pl"/>
+			<F N="src_incoming/parsing/chat80/log"/>
+			<F N="src_incoming/parsing/chat80/newdict.pl"/>
+			<F N="src_incoming/parsing/chat80/newtop.pl"/>
+			<F N="src_incoming/parsing/chat80/portray.pl"/>
+			<F N="src_incoming/parsing/chat80/ptree.pl"/>
+			<F N="src_incoming/parsing/chat80/qplan.pl"/>
+			<F N="src_incoming/parsing/chat80/readin.pl"/>
+			<F N="src_incoming/parsing/chat80/README.TXT"/>
+			<F N="src_incoming/parsing/chat80/scopes.pl"/>
+			<F N="src_incoming/parsing/chat80/slots.pl"/>
+			<F N="src_incoming/parsing/chat80/talkr.pl"/>
+			<F N="src_incoming/parsing/chat80/xgproc.pl"/>
+			<F N="src_incoming/parsing/chat80/xgrun.pl"/>
+		</Folder>
+	</Files>
+</Project>

@@ -1,0 +1,124 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+	Version="10.0"
+	VendorName="SlickEdit"
+	WorkingDir=".">
+	<Config
+		Name="Release"
+		OutputFile=""
+		CompilerConfigName="Latest Version">
+		<Menu>
+			<Target
+				Name="Compile"
+				MenuCaption="&amp;Compile"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveCurrent"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Rebuild"
+				MenuCaption="&amp;Rebuild"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Debug"
+				MenuCaption="&amp;Debug"
+				SaveOption="SaveNone"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Execute"
+				MenuCaption="E&amp;xecute"
+				SaveOption="SaveNone"
+				RunFromDir="%rw">
+				<Exec CmdLine='"nl_system.exe"'/>
+			</Target>
+		</Menu>
+	</Config>
+	<CustomFolders>
+		<Folder
+			Name="Source Files"
+			Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl"/>
+		<Folder
+			Name="Header Files"
+			Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.inc;*.sh;*.cpy;*.if"/>
+		<Folder
+			Name="Resource Files"
+			Filters="*.ico;*.cur;*.dlg"/>
+		<Folder
+			Name="Bitmaps"
+			Filters="*.bmp"/>
+		<Folder
+			Name="Other Files"
+			Filters="">
+		</Folder>
+	</CustomFolders>
+	<Files AutoFolders="PackageView">
+		<Folder Name="src">
+			<F N="src/cliopatria_binding.pl"/>
+			<F N="src/daemon.pl"/>
+			<F N="src/launchcliopatria.pl"/>
+			<F N="src/run.pl"/>
+			<F N="src/run_common.pl"/>
+			<F N="src/run_debug.pl"/>
+			<F N="src/run_tests.pl"/>
+			<F N="src/testwebconsole.pl"/>
+		</Folder>
+		<Folder Name="src/config-enabled">
+			<F N="src/config-enabled/config.pl"/>
+			<F N="src/config-enabled/debug.pl"/>
+			<F N="src/config-enabled/network.pl"/>
+			<F N="src/config-enabled/pengines.pl"/>
+			<F N="src/config-enabled/store.pl"/>
+			<F N="src/config-enabled/winpath.pl"/>
+			<F N="src/config-enabled/zlib.pl"/>
+		</Folder>
+		<Folder Name="src/http">
+			<F N="src/http/user_page.pl"/>
+		</Folder>
+		<Folder Name="src/logicmoo_util">
+			<F N="src/logicmoo_util/logicmoo_util_all.pl"/>
+			<F N="src/logicmoo_util/logicmoo_util_bugger.pl"/>
+			<F N="src/logicmoo_util/logicmoo_util_ctx_frame.pl"/>
+			<F N="src/logicmoo_util/logicmoo_util_dcg.pl"/>
+			<F N="src/logicmoo_util/logicmoo_util_header.pl"/>
+			<F N="src/logicmoo_util/logicmoo_util_library.pl"/>
+			<F N="src/logicmoo_util/logicmoo_util_strings.pl"/>
+			<F N="src/logicmoo_util/logicmoo_util_terms.pl"/>
+		</Folder>
+		<Folder Name="src/model">
+			<F N="src/model/substance.pl"/>
+		</Folder>
+		<Folder Name="src/mudconsole">
+			<F N="src/mudconsole/mudconsole.pl"/>
+			<F N="src/mudconsole/mudconsolestart.pl"/>
+		</Folder>
+		<Folder Name="src_modules/candc">
+			<F
+				N="src_modules/candc/*.pl"
+				Recurse="1"
+				Refilter="0"
+				Excludes=""/>
+		</Folder>
+		<Folder Name="src_modules/nl_system">
+			<F
+				N="src_modules/nl_system/*.*"
+				Recurse="1"
+				Refilter="0"
+				Excludes=""/>
+		</Folder>
+	</Files>
+</Project>

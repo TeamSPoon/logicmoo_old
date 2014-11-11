@@ -1,0 +1,159 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+	Version="10.0"
+	VendorName="SlickEdit"
+	WorkingDir=".">
+	<Config
+		Name="Release"
+		OutputFile=""
+		CompilerConfigName="GCC-4.8.2-i686-pc-cygwin">
+		<Menu>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				SaveOption="SaveModified"
+				RunFromDir="%rw"
+				CaptureOutputWith="ProcessBuffer"
+				ClearProcessBuffer="1"
+				Verbose="1"
+				Beep="1">
+				<Exec CmdLine="T:\devel\logicmoo\StartMUDServer.bat build"/>
+			</Target>
+		</Menu>
+		<PreBuildCommands StopOnError="1"/>
+		<PostBuildCommands StopOnError="1"/>
+	</Config>
+	<CustomFolders>
+		<Folder
+			Name="Source Files"
+			Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl">
+		</Folder>
+		<Folder
+			Name="Header Files"
+			Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.inc;*.sh;*.cpy;*.if"/>
+		<Folder
+			Name="Resource Files"
+			Filters="*.ico;*.cur;*.dlg"/>
+		<Folder
+			Name="Bitmaps"
+			Filters="*.bmp"/>
+		<Folder
+			Name="Other Files"
+			Filters="">
+		</Folder>
+	</CustomFolders>
+	<Files AutoFolders="DirectoryView">
+		<Folder Name="src">
+			<Folder Name="logicmoo_util">
+				<F
+					N="src/logicmoo_util/*.*"
+					Recurse="1"/>
+			</Folder>
+			<F
+				N="src/*.*"
+				Recurse="0"
+				Refilter="0"
+				Excludes=""/>
+		</Folder>
+		<Folder Name="src_data">
+			<Folder Name="pldata">
+				<F N="src_data/pldata/el_assertions.pl.hide"/>
+				<F N="src_data/pldata/el_holds.pl.hide"/>
+				<F N="src_data/pldata/nldata_talk_db_pdat.pl"/>
+			</Folder>
+		</Folder>
+		<Folder Name="src_incoming">
+			<F
+				N="src_incoming/*.*"
+				Recurse="1"
+				Excludes="*unused.*;*.orig;*.ba*"/>
+		</Folder>
+		<Folder Name="src_incoming_next">
+			<F
+				N="src_incoming_next/*.*"
+				Recurse="1"
+				Refilter="0"
+				Excludes=""/>
+		</Folder>
+		<Folder Name="src_modules">
+			<Folder Name="Cliopatria">
+				<F
+					N="src_modules/Cliopatria/*.*"
+					Recurse="1"
+					Excludes="yasr/;Tests/"/>
+			</Folder>
+			<Folder Name="leanCOP">
+				<F
+					N="src_modules/leanCOP/*.*"
+					Recurse="1"
+					Refilter="0"
+					Excludes=""/>
+			</Folder>
+			<Folder Name="MaLARea">
+				<Folder Name="script">
+					<Folder Name="malecop">
+						<F
+							N="src_modules/MaLARea/script/malecop/*.*"
+							Recurse="1"/>
+					</Folder>
+				</Folder>
+			</Folder>
+			<Folder Name="swipl">
+				<Folder Name="library">
+					<Folder Name="pldoc">
+						<F N="src_modules/swipl/library/pldoc/doc_access.pl"/>
+						<F N="src_modules/swipl/library/pldoc/doc_colour.pl"/>
+						<F N="src_modules/swipl/library/pldoc/doc_html.pl"/>
+						<F N="src_modules/swipl/library/pldoc/doc_htmlsrc.pl"/>
+						<F N="src_modules/swipl/library/pldoc/doc_index.pl"/>
+						<F N="src_modules/swipl/library/pldoc/doc_library.pl"/>
+						<F N="src_modules/swipl/library/pldoc/doc_man.pl"/>
+						<F N="src_modules/swipl/library/pldoc/doc_modes.pl"/>
+						<F N="src_modules/swipl/library/pldoc/doc_pack.pl"/>
+						<F N="src_modules/swipl/library/pldoc/doc_process.pl"/>
+						<F N="src_modules/swipl/library/pldoc/doc_register.pl"/>
+						<F N="src_modules/swipl/library/pldoc/doc_search.pl"/>
+						<F N="src_modules/swipl/library/pldoc/doc_util.pl"/>
+						<F N="src_modules/swipl/library/pldoc/doc_wiki.pl"/>
+						<F N="src_modules/swipl/library/pldoc/edit.png"/>
+						<F N="src_modules/swipl/library/pldoc/editpred.png"/>
+						<F N="src_modules/swipl/library/pldoc/favicon.ico"/>
+						<F N="src_modules/swipl/library/pldoc/h1-bg.png"/>
+						<F N="src_modules/swipl/library/pldoc/h2-bg.png"/>
+						<F N="src_modules/swipl/library/pldoc/hooks.pl"/>
+						<F N="src_modules/swipl/library/pldoc/jquery.js"/>
+						<F N="src_modules/swipl/library/pldoc/multi-bg.png"/>
+						<F N="src_modules/swipl/library/pldoc/pldoc.css"/>
+						<F N="src_modules/swipl/library/pldoc/pldoc.js"/>
+						<F N="src_modules/swipl/library/pldoc/pldoc.sty"/>
+						<F N="src_modules/swipl/library/pldoc/pllisting.css"/>
+						<F N="src_modules/swipl/library/pldoc/priv-bg.png"/>
+						<F N="src_modules/swipl/library/pldoc/private.png"/>
+						<F N="src_modules/swipl/library/pldoc/pub-bg.png"/>
+						<F N="src_modules/swipl/library/pldoc/public.png"/>
+						<F N="src_modules/swipl/library/pldoc/README"/>
+						<F N="src_modules/swipl/library/pldoc/reload.png"/>
+						<F N="src_modules/swipl/library/pldoc/source.png"/>
+						<F N="src_modules/swipl/library/pldoc/up.gif"/>
+					</Folder>
+					<F
+						N="src_modules/swipl/library/*.*"
+						Recurse="1"
+						Refilter="0"
+						Excludes=""/>
+				</Folder>
+			</Folder>
+			<Folder Name="swish">
+				<F
+					N="src_modules/swish/*.*"
+					Recurse="1"
+					Excludes=".git/;*~/"/>
+			</Folder>
+			<F
+				N="src_modules/*.*"
+				Recurse="0"
+				Refilter="0"
+				Excludes=""/>
+		</Folder>
+	</Files>
+</Project>

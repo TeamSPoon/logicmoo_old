@@ -1,0 +1,246 @@
+diff --git a/config.js b/config.js
+old mode 100644
+new mode 100755
+index 83de393..9c4099e
+--- a/config.js
++++ b/config.js
+@@ -8,7 +8,7 @@ var HMUD_Config = {
+  * host: window.location.hostname,
+  * host: "127.0.0.1",
+  */
+-    host: window.location.hostname,
++    host: 'mud.prologmoo.com',
+     port: 4000,
+ 
+ /*
+diff --git a/guide.js b/guide.js
+old mode 100644
+new mode 100755
+index 878fc5b..06f34b3
+--- a/guide.js
++++ b/guide.js
+@@ -1,104 +1,105 @@
+ var HMUD_Guide = [
+     [
+-        "Movimentação",
++        "Movement",
+         [
+-            ["norte", "Anda para o norte."],
+-            ["sul", "Anda para o sul."],
+-            ["leste", "Anda para o leste."],
+-            ["oeste", "Anda para o oeste."],
+-            ["cima", "Anda para cima."],
+-            ["baixo", "Anda para baixo."],
+-            ["ver", "Digite VER para observar a sala onde você está. VER <nome> para ver uma coisa, pessoa ou criatura. VER QUADRO irá ver o objeto quadro."],
+-            ["saídas", "Lista as saídas visíveis."],
+-            ["entrar", "Entra em algum lugar. ENTRAR PORTAL para entrar em um portal."],
+-            ["abrir", "Abre uma porta ou objeto. ABRIR <porta ou objeto>. ABRIR NORTE irá abrir uma porta que esteja fechada ao norte."],
+-            ["fechar", "Fecha uma porta ou objeto. FECHAR <porta ou objeto>. FECHAR SUL irá fechar uma porta que esteja aberta ao sul."],
+-            ["trancar", "Tranca uma porta ou objeto. TRANCAR <porta ou objeto>. TRANCAR LESTE irá trancar uma porta que esteja aberta à leste. É preciso ter a chave da porta para trancá-la."],
+-            ["destrancar", "Destranca uma porta ou objeto. DESTRANCAR <porta ou objeto>. DESTRANCAR OESTE irá detrancar uma porta que esteja aberta à oeste. É preciso ter a chave da porta para destrancá-la."],
+-            ["acordar", "Acorda, caso esteja dormindo."],
+-            ["dormir", "Dorme, caso esteja acordado. Recupera pontos mais rapidamente."],
+-            ["descansar", "Descansa. Recupera pontos um pouco mais rápido, com a vantagem de correr menos riscos do que dormir (ser atacado uma criatura, por exemplo)."],
+-            ["sentar", "Senta."],
+-            ["levantar", "Levanta."],
+-            ["meditar", "Medita, recuperando os pontos de mana com maior rapidez."]
++            ["North", "Walk to the north."],
++            ["South", "Walk to the south."],
++            ["East", "Walk to the east."],
++            ["West", "Walk to the west."],
++            ["Above", "Come up."],
++            ["Down", "Come down."],
++            ["See", "Enter SHOW to observe the room where you stand ¡. <name> SEE to see one thing, person or creature. ¡SEE TABLE will see the object framework."],
++            ["Outputs", "list the outputs visUeis."],
++            ["Get", "Go somewhere. PORTAL ENTER to enter a portal."],
++            ["Open", "Open a door or object. Port> OPEN or object>. ¡OPEN NORTH will open a door that is closed to the north."],
++            ["Close", "Close a door or object. Port> CLOSE or object>. CLOSE SOUTH ¡will close a door that is open to the south."],
++            ["Lock", "Lock the door or object. Port> LOCK or object>. ¡LOCK EAST will lock a door that is open east U U. must have the key to lock the door ¡it."],
++            ["Unlock", "Unlock a door or object. UNLOCK port> or object>. UNLOCK WEST will ¡detrancar a port that is open west U U. must have the key to unlock the door ¡it."],
++            ["Agree", "Wake up, if you're sleeping."],
++            ["Bed", "Sleep, if agreed. Retrieves points faster."],
++            ["Beach", "Rest. Retrieves a little more points rUFast, with the advantage of less risk than sleeping (a creature being attacked, for example)."],
++            ["Sit", "Sit."],
++            ["Up", "Arise."],
++            ["Meditate", "Meditate, recovering mana faster."]
+         ]
+     ],
+     [
+         "Comunicação",
+         [
+-            ["falar", "Fala. Apenas digite FALAR <mensagem>. As pessoas que estiverem na mesma sala que você receberão a mensagem."],
+-            ["contar", "Conta algo para alguém. Ou seja, é uma conversa em particular. Use CONTAR <pessoa> <mensagem>."],
+-            ["tagarelar", "Envia uma mensagem para todas os jogadores."]
++			["Talk", "talking. TALK Just type <message>. Persons who are in the same room that you will receive £ oa message."],
++            ["Count", "Count something to Algua © m. Ie U© a private conversation. <person> <message> Use COUNT."],
++            ["Chattering", "Sends a message to all the players."]
+         ]
+     ],
+     [
+         "Objetos",
+         [
+-            ["inventário", "Lista os objetos que você está carregando."],
+-            ["equipamentos", "Lista os objetos que você está vestindo."],
+-            ["pegar", "Pega um objeto. Exemplo: PEGAR ESCUDO."],
+-            ["soltar", "Solta um objeto. Exemplo: SOLTAR CHAVE."],
+-            ["vestir", "Veste algum objeto. Exemplo: VESTIR BOTAS."],
+-            ["remover", "Remove um objeto que esteja vestindo. Exemplo: REMOVER BOTAS."],
+-            ["segurar", "Segura um objeto. Exemplo: SEGURAR TOCHA."],
+-            ["empunhar", "Empunha uma arma. Exemplo: EMPUNHAR ESPADA."],
+-            ["pôr", "Coloca um objeto em algum lugar. Exemplo: PÔR PÃO MOCHILA coloca o pão dentro da mochila."],
+-            ["ver", "Digite VER para observar a sala onde você está. VER <nome> para ver uma coisa, pessoa ou criatura. VER QUADRO irá ver o objeto quadro."],
+-            ["ler", "Lê alguma coisa. Por exemplo, para ler uma mensagem de um quadro, digite LER 1 para ler a mensagem número 1."],
+-            ["examinar", "Examina com mais detalhes alguém ou algum objeto. Exemplo: EXAMINAR MOCHILA."],
+-            ["dar", "Dá alguma coisa para alguém. Exemplos: DAR LUVAS MARVIN entrega luvas para Marvin. DAR 1000 MOEDAS NINA entrega 1000 moedas para Nina."],
+-            ["comer", "Come um alimento. Exemplo: COMER PÃO."],
+-            ["beber", "Bebe um líquido de algum lugar. Exemplo: BEBER CANTIL."]
++    
++            ["Inventory", "List the objects that you're is carrying."],
++            ["Equipment", "List the objects that you're wearing."],
++            ["Get", "Take an object. Example:. GET SHELL"],
++            ["Drop", "Unleash an object. Example:. DROP KEY"],
++            ["Dress"," Put some object. Example:. WEAR BOOTS "],
++            ["Remove", "Removes an object that is wearing. Example:. REMOVE BOOTS"],
++            ["Hold", "Hold an object. Example:. TORCH HANDLE"],
++            ["Wield", "Wield a weapon. Example:. SWORD wielding"],
++            ["Put", "Places an object somewhere. Example: PU R PUO BACKPACK puts the bread inside the bag. "],
++            ["See", "Enter SHOW to observe the room where you stand ¡. <name> SEE to see one thing, person or creature. ¡SEE TABLE will see the object framework."],
++            ["Read", "LUª something. For example, to read a message from a box, type READ 1 to read 1 No of message."],
++            ["Examine", "Examine more details Algua © m or objects. Example:. EXAMINE BACKPACK"],
++            ["Give", "DU¡something to Algua © m. Examples: DAR GLOVES gloves for delivery MARVIN Marvin DAR 1000 COINS 1000 gold for delivery NINA Nina.."],
++            ["Eating", "eats a food. Example:. EAT PUO"],
++            ["Drink", "Take a drink of Liquid somewhere. Example:. DRINK CANTIL"]
+         ]
+     ],
+     [
+         "Informação",
+         [
+-            ["ajuda", "Obtém ajuda. Exemplo, para saber mais sobre o comando PEGAR, digite AJUDA PEGAR."],
+-            ["diretrizes", "Lista as regras e diretrizes que você deve ler e seguir. São as leis deste mundo."],
+-            ["deuses", "Lista os deuses que administram este mundo."],
+-            ["imortais", "Lista os imortais. Jogadores muito experientes e que merecem destaque."],
+-            ["horas", "Mostra o tempo atual dentro do jogo."],
+-            ["tempo", "Mostra o estado climático atual (tempestade, sol, nuvens etc)."],
+-            ["opções", "Mostra o estado de diversas opções no jogo."],
+-            ["dicas", "Liga e desliga exibição periódica de dicas sobre o jogo."],
+-            ["mdd", "Mostra a mensagem do dia."],
+-            ["pontos", "Mostra diversas informações sobre seu personagem."],
+-            ["praticar", "Lista as magias e habilidades que você conhece. Em frente ao mestre em sua guilda, serve para praticar uma magia ou habilidade."],
+-            ["habilidades", "Lista as habilidades que você aprende em cada nível na classe atual."],
+-            ["magias", "Lista as magias que você aprende em cada nível na classe atual."],
+-            ["quem", "Lista os personagens conectados no jogo que estejam visíveis para você."],
+-            ["onde", "Mostra onde está um monstro ou jogador dentro da mesma área que você. Exemplo: ONDE CACHORRO irá mostrar em qual sala está o cachorro, caso seja encontrado um em sua área."],
+-            ["considerar", "Compara as forças entre você e um possível oponente para um combate. Exemplo: CONSIDERAR MONSTRO."]
++	    ["Aid", "Gets Help © m. Example, to learn more about the GET command, type HELP CATCH."],
++            ["Guidelines", "Provides rules and guidelines that you should read and follow. SU£ o the laws of this world."],
++            ["Gods", "Do the gods who run this world."],
++            ["Immortals", "List the immortals. Players very experienced and noteworthy."],
++            ["Hours", "Displays the current time in the game."],
++            ["Time", "Shows the current state climate ¡tico (storm, sun, clouds etc.)."],
++            ["OPA § Clipart", "Shows the status of various OPA § Clipart in the game."],
++            ["Tips", "Turns exhibited Peria tip tips about the game."],
++            ["Mdd", "Displays the message of the day."],
++            ["Points", "File information shows various § Clipart about his character."],
++            ["Practicing", "List the spells and abilities that you know. Opposite the master of your guild, is to practice a spell or ability."],
++            ["Skills", "List the skills that you learn at each level in the current class."],
++            ["Spells", "list the spells that you learn at each level in the current class."],
++            ["Who", "List the characters in the game that are connected visUeis for you."],
++            ["Where", "Shows where's a monster or player within the same U¡rea that you Example:. WHERE PUPPY will ¡show in which room is ¡the dog if found one in your area."],
++            ["Account", "Compares out between the VOCA § ª and possUel opponent for a fight. Example:. CONSIDER MONSTER"]
+         ]
+     ],
+     [
+-        "Combate",
++        "Combat",
+         [
+-            ["matar", "Inicia um combate. Exemplo: MATAR MONSTRO."],
+-            ["fugir", "Se achar que vai morrer, pode tentar fugir do combate com este comando."],
+-            ["covarde", "Faz seu personagem se acovardar e fugir automaticamente quando o HP estiver abaixo de um certo nível. Exemplo: COVARDE 100 para fugir com HP abaixo de 100."],
+-            ["grupo", "Gerencia grupos de combate. GRUPO TODOS irá adicionar ao seu grupo todos que estejam te seguindo. Apenas GRUPO mostra as pessoas em seu grupo."],
+-            ["seguir", "Segue alguém. Exemplo: SEGUIR HENRY."]
++            ["Kill", "Start a fight. Example:. MONSTER KILL"],
++            ["Escape", "If you think you will die, you try to escape the fighting in this command."],
++            ["Coward", "Makes your character automatically cower and flee when HP is below a certain tank. Example: COWARD to get away with 100 HP under 100."],
++            ["Group", "Manages battle groups. ¡ALL GROUP will add to your group all who are following you. CREW Only shows people in your group."],
++            ["Below", "Follow Algua © m. Example: FOLLOW HENRY."]
+         ]
+     ],
+     [
+-        "Magias",
++        "Magic",
+         [
+-            ["lançar", "Lança uma magia. Exemplo: LANÇAR 'ARMOR'."],
+-            ["recitar", "Recita um pergaminho. Exemplo: RECITAR RETORNO."],
+-            ["tomar", "Toma uma poção. Exemplo: TOMAR POÇÃO,AMARELA."],
+-            ["usar", "Usa um bastão mágico que esteja segurando. Exemplo: USAR VARINHA."]
++            ["Cast", "a magic Launches § Example:.. Lana . AR 'ARMOR'"],
++            ["Recite", "recites a scroll. Example:. Recite RETURN"],
++            ["Make", "It takes a potion § U£ o Example:.. TAKE POA . RECTIFIER, YELLOW"],
++            ["Use", "Uses a just £ o the magical it is holding. Example:. USE WAND"]
+         ]
+     ],
+     [
+         "Comandos Úteis",
+         [
+-            ["cores", "Altera o modo de exibição de cores. Exemplo: CORES COMPLETE."],
+-            ["breve", "Liga e desliga o modo breve, que não exibe as descrições das salas ao andar entre elas."],
+-            ["compacto", "Elimina linhas vazias desnecessárias, tornando o texto mais compacto."],
+-            ["acentos", "Liga e desliga a visualização de acentos."],
+-            ["sair", "Sai do jogo"]
++            ["Color", "Change the mode exhibited § U£ o color. Example:. COLORS COMPLETE"],
++            ["Brief", "Turns on and off briefly, that does not display the updated description § Clipart of rooms on the floor between them."],
++            ["Compact", "¡rias Eliminates unnecessary empty lines, making the text more compact."],
++            ["Accents", "Turns the Displayed § U£ o accents."],
++            ["Exit", "Exit Game"]
+         ]
+     ]
+ ];
+diff --git a/messages.js b/messages.js
+index f633a02..cf41fdc 100644
+--- a/messages.js
++++ b/messages.js
+@@ -1,27 +1,27 @@
+-/* Copie este arquivo para messages.js caso queira exibir mensagens em português */
++/* Copy this file to messages.js in case you want to display messages in English */
+ var HMUD_Messages = {
+-    loadingClient: "<span class=\"loading\">Carregando... </span>",
++    loadingClient: "<span class=\"loading\">Loading... </span>",
+      clientLoaded: "<span class=\"loaded\">OK!</span><br>",
+-       connecting: "<span class=\"connecting\">Conectando ao DeBo MUD... </span>",
+-        connected: "<span class=\"connected\">conectado!</span><br>",
+-     disconnected: "<br><span class=\"disconnected\">Desconectado.</span><hr>",
+-          ioError: "<br><span class=\"error\">Erro de Entrada e Saída.</span>",
+-    securityError: "<span class=\"error\">hmm... não deu (Security Error).</span><br>",
++       connecting: "<span class=\"connecting\">Connecting to DeBo MUD... </span>",
++        connected: "<span class=\"connected\">connected!</span><br>",
++     disconnected: "<br><span class=\"disconnected\">Disconnected.</span><hr>",
++          ioError: "<br><span class=\"error\">Input/Output Error.</span>",
++    securityError: "<span class=\"error\">hmm... no way (Security Error).</span><br>",
+ 
+       windowTitle: "DeBo (hMUD)",
+  windowTitleAlert: "»»»»»!«««««",
+ 
+-         cmdGuide: "Guia de comandos",
+-       selectFont: "Fonte preferida",
++         cmdGuide: "Command reference",
++       selectFont: "Favorite font",
+ 
+-      clearOutput: "Limpar tela",
+-            lines: "linhas",
+-     preserve1000: "Preservar últimas 1000 linhas",
+-             half: "metade",
+-              all: "tudo",
++      clearOutput: "Clear screen",
++            lines: "lines",
++     preserve1000: "Preserve last 1000 lines",
++             half: "half",
++              all: "all",
+ 
+-          connect: "Conectar",
+-        reconnect: "Reconectar",
+-       disconnect: "Desconectar"
++          connect: "Connect",
++        reconnect: "Reconnect",
++       disconnect: "Disconnect"
+ };
+ 
